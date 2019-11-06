@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/bottomTintuc"
+        android:title="Tin Tức"
+        android:icon="@drawable/ic_tintuc" />
+    <item android:id="@+id/bottomDiemThuong"
+        android:title="Điểm Thưởng"
+        android:icon="@drawable/ic_cuahang"
+        />
+    <item android:id="@+id/bottomHome"
+        android:title="Home"
+        android:icon="@drawable/ic_home"/>
+    <item android:id="@+id/bottomCuahang"
+        android:title="Cửa hàng"
+        android:icon="@drawable/ic_diemthuong"/>
+
+    <item android:id="@+id/bottomTaiKhoan"
+        android:title="Tài khoản"
+        android:icon="@drawable/ic_account"/>
+
+</menu>

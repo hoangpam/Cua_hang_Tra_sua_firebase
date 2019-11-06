@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_cttvien"
+            android:icon="@drawable/ic_cotmoc"
+            android:title="Chương trình thành viên" />
+        <item
+            android:id="@+id/nav_mggia"
+            android:icon="@drawable/ic_cotmoc"
+            android:title="Mã giảm giá" />
+        <item
+            android:id="@+id/nav_dban"
+            android:icon="@drawable/ic_cotmoc"
+            android:title="Đặt bàn" />
+        <item
+            android:id="@+id/nav_ttcnhan"
+            android:icon="@drawable/ic_cotmoc"
+            android:title="Thông tin cá nhân" />
+
+    </group>
+
+
+
+
+</menu>

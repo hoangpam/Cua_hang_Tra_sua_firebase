@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_cttvien">
+    <fragment
+        android:id="@+id/nav_cttvien"
+        android:name="com.example.mtking.ui.CTTV.CTTVFragment"
+        android:label="chương trình trành viên"
+        tools:layout="@layout/fragment_cttv" />
+
+    <fragment
+        android:id="@+id/nav_ttcnhan"
+        android:name="com.example.mtking.ui.TTCN.TTCNFragment"
+        android:label="thông tin cá nhân"
+        tools:layout="@layout/fragment_ttcn" />
+
+    <fragment
+        android:id="@+id/nav_mggia"
+        android:name="com.example.mtking.ui.MGGIA.MGGIAFragment"
+        android:label="Mã giảm giá"
+        tools:layout="@layout/fragment_magiamgia" />
+
+    <fragment
+        android:id="@+id/nav_dban"
+        android:name="com.example.mtking.ui.DBAN.DatBanFragment"
+        android:label="Đặt bàn"
+        tools:layout="@layout/fragment_datban" />
+
+</navigation>

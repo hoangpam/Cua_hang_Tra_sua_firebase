@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/dangkyts"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_centerInParent="true">
+    <RelativeLayout
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="50dp"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:padding="2px"
+            android:id="@+id/ll_display_name"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:background="@drawable/bg_edittext_user"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_user_login"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <EditText
+                android:textSize="14sp"
+                android:layout_marginRight="15dp"
+                android:id="@+id/et_tenhienthi"
+                android:paddingLeft="15dp"
+                android:hint="Tên hiển thị"
+                android:background="@color/text_white"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:padding="2px"
+            android:layout_marginTop="10dp"
+            android:id="@+id/ll_email"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:background="@drawable/bg_edittext_user"
+            android:layout_below="@+id/ll_display_name"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_email" />
+            <EditText
+                android:paddingLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:id="@+id/et_email"
+                android:textSize="14sp"
+                android:hint="Email"
+                android:background="@color/text_white"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="2px"
+            android:layout_marginTop="10dp"
+            android:id="@+id/ll_phone"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:background="@drawable/bg_edittext_user"
+            android:layout_below="@+id/ll_email"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_lock"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <EditText
+                android:paddingLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:id="@+id/et_matkhau"
+                android:textSize="14sp"
+                android:hint="Mật khẩu"
+                android:background="@color/text_white"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:padding="2px"
+            android:layout_marginTop="10dp"
+            android:id="@+id/ll_pass"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:background="@drawable/bg_edittext_user"
+            android:layout_below="@+id/ll_phone"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_lock"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <EditText
+                android:paddingLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:id="@+id/et_nhaplaimk"
+                android:textSize="14sp"
+                android:hint="Nhập lại mật khẩu"
+                android:inputType="textPassword"
+                android:background="@color/text_white"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:padding="2px"
+            android:layout_marginTop="10dp"
+            android:id="@+id/ll_user_name"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:background="@drawable/bg_edittext_user"
+            android:layout_below="@+id/ll_pass"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/phone" />
+            <EditText
+                android:paddingLeft="15dp"
+                android:textSize="14sp"
+                android:layout_marginRight="15dp"
+                android:id="@+id/et_sdt"
+                android:hint="Số điện thoại"
+                android:background="@color/text_white"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_register"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/ll_user_name"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/bg_bt_login"
+            android:text="Đăng kí"
+            android:textColor="@color/text_white"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <LinearLayout
+        android:paddingBottom="45dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center_horizontal"
+            android:text="Bản quyền của sinh viên 07DH trường HuFi"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/text_black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="Liên hệ: thiendcday@gmail.com"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/text_black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

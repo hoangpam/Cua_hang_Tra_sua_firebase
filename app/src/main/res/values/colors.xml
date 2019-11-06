@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#76eb1d</color>
+    <color name="colorPrimaryDark">#ff8f03</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="text_black">#0c0c0b</color>
+    <color name="text_white">#fff</color>
+    <color name="text_orange">#ce7417</color>
+    <color name="text_thanhngang">#af18da</color>
+
+    <color name="giohang">#518b51</color>
+    <color name="thanhngang">#e6b954</color>
+
+    <color name="nen">#0179cb</color>
+    <color name="chuakichhoat">#FF0000</color>
+    <color name="dakichhoat">#00CC00</color>
+    <color name="overplayBackground">#c1c1c1</color>
+    <color name="overplayActivityBar">#111111</color>
+</resources>
