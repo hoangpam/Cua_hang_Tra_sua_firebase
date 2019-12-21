@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:id="@+id/relative_thucuong2"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:id="@+id/ll_hienthihinh2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_editchitiethinh"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgThucUong2"
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:layout_margin="16dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="Tên: Tra sua"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="Size: Trung Binh"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_black"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:text="Sô lượng: "
+                        android:textAlignment="center"
+                        android:textColor="@color/text_black"
+                        android:textSize="15sp" />
+                    <LinearLayout
+                        android:id="@+id/ll_chonsize"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <Button
+                            android:id="@+id/btn_giamsoluong"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:text="-"
+                            android:background="@drawable/bg_dieuchinh"></Button>
+
+                        <TextView
+                            android:id="@+id/tvSoluong"
+                            android:layout_width="wrap_content"
+                            android:layout_margin="5dp"
+                            android:paddingTop="5dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:text="2"
+                            android:textAlignment="center"
+                            android:textColor="@color/text_black"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/btn_tangsoluong"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:text="+"
+                            android:background="@drawable/bg_dieuchinh"></Button>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvGia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="Giá: 25000"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_black"
+                    android:textSize="15sp" />
+                <Button
+                    android:id="@+id/btnXoa"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+
+                    android:text="Xoá"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="50sp"
+                    android:textColor="@color/text_white"
+                    android:background="@drawable/bg_giohang"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

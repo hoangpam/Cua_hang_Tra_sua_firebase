@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/relative_giohang1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Giỏ Hàng"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:background="@drawable/bg_editkhung"
+            android:textColor="@color/text_black"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_dsgiohang1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_dsgiohang"
+            android:layout_width="match_parent"
+            android:layout_height="500dp" />
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tvTongtien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="200dp"
+        android:textColor="#D81B60"
+        android:textSize="18sp"
+        android:text="Tổng tiền: 0">
+
+    </TextView>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_thanhtoan"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+
+            android:text="Thanh toán"
+            android:layout_marginLeft="50sp"
+            android:layout_marginRight="50sp"
+            android:textColor="@color/text_white"
+            android:background="@drawable/bg_giohang"/>
+    </RelativeLayout>
+
+</LinearLayout>

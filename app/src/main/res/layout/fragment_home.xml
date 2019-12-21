@@ -20,19 +20,19 @@
 <!--                />-->
         </androidx.recyclerview.widget.RecyclerView>
 
-        <LinearLayout
-            android:id="@+id/ll_giohang"
-            android:layout_width="78dp"
-            android:layout_height="110dp"
-            android:layout_marginBottom="72dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/rv_home">
+<!--        <LinearLayout-->
+<!--            android:id="@+id/ll_giohang"-->
+<!--            android:layout_width="78dp"-->
+<!--            android:layout_height="110dp"-->
+<!--            android:layout_marginBottom="72dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="@+id/rv_home">-->
 
-            <ImageButton
-                android:id="@+id/imb_giohang"
-                android:layout_width="92dp"
-                android:layout_height="107dp"
-                android:src="@mipmap/logonn123" />
-        </LinearLayout>
+<!--            <ImageButton-->
+<!--                android:id="@+id/imb_giohang"-->
+<!--                android:layout_width="92dp"-->
+<!--                android:layout_height="107dp"-->
+<!--                android:src="@mipmap/logonn123" />-->
+<!--        </LinearLayout>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

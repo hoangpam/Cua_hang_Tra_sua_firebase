@@ -9,10 +9,6 @@
             android:icon="@drawable/ic_cotmoc"
             android:title="Chương trình thành viên" />
         <item
-            android:id="@+id/nav_mggia"
-            android:icon="@drawable/ic_cotmoc"
-            android:title="Mã giảm giá" />
-        <item
             android:id="@+id/nav_dban"
             android:icon="@drawable/ic_cotmoc"
             android:title="Đặt bàn" />

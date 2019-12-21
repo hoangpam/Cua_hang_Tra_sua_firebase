@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.GmailActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ll_tenthumuc"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imvtrove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_trove"></ImageView>
+        <TextView
+            android:id="@+id/thumuc"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="@color/text_black"
+            android:textSize="20dp"></TextView>
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vui lòng nhập địa chỉ email bạn muốn sửa đổi">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="10sp"
+            android:id="@+id/hienthiemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="chucha@gmail.com">
+
+        </TextView>
+        <Button
+            android:id="@+id/btn_sua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sửa đổi địa chỉ email"
+            android:layout_marginLeft="40sp"
+            android:background="@drawable/bg_register"></Button>
+    </LinearLayout>
+
+</LinearLayout>

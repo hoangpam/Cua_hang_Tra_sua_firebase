@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.SettingActivity"
+    android:background="@color/item">
+    <LinearLayout
+        android:id="@+id/ll_trove"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/imvtroved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_trove">
+
+        </ImageView>
+        <TextView
+            android:id="@+id/text_trove"
+            android:layout_marginLeft="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cài đặt"
+            android:textSize="20sp"
+            android:textColor="@color/text_black"></TextView>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/it_quandiachi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_states"
+                android:clickable="true"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imvQLdiachi"
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_location" />
+
+                <TextView
+                    android:id="@+id/txtdiachi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imvQLdiachi"
+                    android:paddingLeft="50dp"
+                    android:text="Quản lý địa chỉ"
+                    android:textColor="@color/text_black"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:id="@+id/chuyentiep"
+                    android:layout_width="184dp"
+                    android:layout_height="20dp"
+                    android:layout_toRightOf="@id/txtdiachi"
+                    android:layout_marginTop="15dp"
+                    android:paddingLeft="80dp"
+                    android:src="@drawable/ic_next"></ImageView>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/it_sdt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_states"
+                android:clickable="true"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imvsdt"
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_phone" />
+
+                <TextView
+                    android:id="@+id/txtphone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imvsdt"
+                    android:paddingLeft="50dp"
+                    android:text="Số điện thoại"
+                    android:textColor="@color/text_black"
+                    android:textSize="16dp" />
+                <ImageView
+                    android:id="@+id/chuyen"
+                    android:layout_width="184dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@id/txtphone"
+                    android:paddingLeft="90dp"
+                    android:src="@drawable/ic_next"></ImageView>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/it_mk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_states"
+                android:clickable="true"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imvmk"
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_key" />
+
+                <TextView
+                    android:id="@+id/txtmk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imvmk"
+                    android:paddingLeft="50dp"
+                    android:text="Quản lý mật khẩu"
+                    android:textColor="@color/text_black"
+                    android:textSize="16dp" />
+                <ImageView
+                    android:id="@+id/chuyenmk"
+                    android:layout_width="184dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@id/txtmk"
+                    android:paddingLeft="60dp"
+                    android:src="@drawable/ic_next"></ImageView>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/it_gmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_states"
+                android:clickable="true"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imvgmail"
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_gmail" />
+
+                <TextView
+                    android:id="@+id/txtgmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imvgmail"
+                    android:paddingLeft="50dp"
+                    android:text="Email"
+                    android:textColor="@color/text_black"
+                    android:textSize="16dp" />
+                <ImageView
+                    android:id="@+id/chuyengmal"
+                    android:layout_width="250dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@id/txtgmail"
+                    android:paddingLeft="140dp"
+                    android:src="@drawable/ic_next"></ImageView>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/it_hethong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_states"
+                android:clickable="true"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imvhethong"
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_setting" />
+
+                <TextView
+                    android:id="@+id/txthethong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imvhethong"
+                    android:paddingLeft="50dp"
+                    android:text="Cài đặt hệ thống"
+                    android:textColor="@color/text_black"
+                    android:textSize="16dp" />
+                <ImageView
+                    android:id="@+id/chuyenhethong"
+                    android:layout_width="250dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@id/txthethong"
+                    android:paddingLeft="60dp"
+                    android:src="@drawable/ic_next"></ImageView>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/it_chungtoi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_states"
+                android:clickable="true"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imvchungtoi"
+                    android:layout_width="30dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_team" />
+
+                <TextView
+                    android:id="@+id/txtchungtoi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imvchungtoi"
+                    android:paddingLeft="50dp"
+                    android:text="Về chúng tôi"
+                    android:textColor="@color/text_black"
+                    android:textSize="16dp" />
+                <ImageView
+                    android:id="@+id/chuyenchungtoi"
+                    android:layout_width="250dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@id/txtchungtoi"
+                    android:paddingLeft="90dp"
+                    android:src="@drawable/ic_next"></ImageView>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

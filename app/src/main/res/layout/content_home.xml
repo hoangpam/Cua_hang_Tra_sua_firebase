@@ -5,14 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="@color/item">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
         <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="20dp"
             android:id="@+id/rcv_menu"
-            android:layout_marginTop="65dp"
-            android:layout_marginBottom="55dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:alignmentMode="alignMargins"
@@ -21,23 +23,6 @@
         </androidx.recyclerview.widget.RecyclerView>
     </LinearLayout>
 
-    <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".activity.MainActivity">
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fab"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|end"
-            android:layout_marginBottom="70dp"
-            android:layout_marginRight="30dp"
-
-            android:backgroundTint="@color/giohang"
-            app:srcCompat="@mipmap/ic_giohang" />
-    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 <!--        <fragment-->
 <!--        android:id="@+id/nav_host_fragment"-->

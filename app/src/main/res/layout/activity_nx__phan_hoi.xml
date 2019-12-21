@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.NX_PhanHoiActivity">
+    <LinearLayout
+        android:id="@+id/ll_tenthumuc"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imvtrove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_trove"></ImageView>
+        <TextView
+            android:id="@+id/thumuc"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nhận xét và phản hồi"
+            android:textColor="@color/text_black"
+            android:textSize="20dp"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_chonphanloai"
+        android:layout_marginTop="5sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/text_phanloai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="thuộc về phân loại"
+            android:textColor="@color/text_black"
+            android:textSize="17sp">
+
+        </TextView>
+        <TextView
+            android:id="@+id/hienthiphanloai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40sp"
+            android:text="vui lòng lựa chọn phân loại">
+
+        </TextView>
+        <ImageView
+            android:id="@+id/imvphanloai"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_phanloai"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8sp"
+        android:background="@color/overplayBackground"></View>
+    <LinearLayout
+        android:id="@+id/nhanxet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+            <EditText
+                android:id="@+id/txthienthi"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:textSize="20sp"
+                android:hint="Vui lòng đề xuất thứ bạn muốn về sản phẩm của chúng tôi , bạn có hài lòng hay không"
+                android:layout_alignParentStart="true"
+                >
+            </EditText>
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:id="@+id/slphanloai"
+            android:layout_marginLeft="300dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0/10000"></TextView>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Các ý kiến của bạn rất quan trọng với chúng tôi,nếu trường hợp khẩn cấp cần liên hệ 19001900"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"></TextView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp">
+        <Button
+        android:id="@+id/gui"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginLeft="80dp"
+        android:text="Gửi"
+        >
+
+        </Button>
+    </RelativeLayout>
+
+</LinearLayout>

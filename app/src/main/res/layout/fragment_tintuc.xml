@@ -1,50 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <LinearLayout
-        android:id="@+id/ll_hah"
-        android:layout_marginTop="55dp"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/item">
+
+    <RelativeLayout
+        android:id="@+id/ll_TinTuc"
         android:layout_width="match_parent"
-        android:layout_height="250dp">
+        android:layout_height="300dp"
+        android:orientation="vertical">
+
+            <TextView
+                android:background="@color/nen"
+                android:id="@+id/tv_tintuc"
+                android:text="Tin tức"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="20dp"
+                android:textColor="@color/text_black"
+                android:backgroundTint="@color/colorPrimary"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5sp"
+                android:background="@color/chuakichhoat"
+                android:layout_marginTop="25sp">
+
+            </View>
+            <ViewFlipper
+                android:id="@+id/viewfl_tintuc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="28dp"
+               >
+
+            </ViewFlipper>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/text_black"></View>
+    <RelativeLayout
+        android:id="@+id/ll_hah"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:orientation="vertical">
         <TextView
+            android:background="@color/nen"
             android:id="@+id/tv_hah"
             android:text="Mã giảm giá"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:textSize="20dp"
-            android:textColor="@color/text_black"/>
-    </LinearLayout>
+            android:textColor="@color/text_black"
+            android:backgroundTint="@color/colorPrimary"/>
 
-    <LinearLayout
-        android:id="@+id/ll_kmai"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_marginTop="305dp"
-        android:orientation="vertical">
-        <TextView
-            android:id="@+id/tv_kmai"
-            android:text="Khuyến mãi"
+        <androidx.recyclerview.widget.RecyclerView
+            android:background="#FFF"
+            android:id="@+id/rv_magiamgia"
+            android:layout_marginTop="28dp"
+            android:foregroundGravity="center"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:textSize="20dp"
-            android:textColor="@color/text_black"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/ll_TinTuc"
-        android:layout_marginTop="456dp"
-        android:layout_width="match_parent"
-        android:layout_height="220dp"
-        android:orientation="horizontal">
-        <TextView
-            android:id="@+id/tv_tintuc"
-            android:text="Tin tức"
+            android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+        <View
+            android:layout_marginTop="25sp"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:textSize="20dp"
-            android:textColor="@color/text_black"/>
+            android:layout_height="3dp"
+            android:background="@color/chuakichhoat"></View>
+    </RelativeLayout>
 
-    </LinearLayout>
-
-</RelativeLayout>
+</LinearLayout>

@@ -38,6 +38,7 @@ public class HomeFragment extends Fragment {
 
     public android.view.View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle saveInstanceState){
         rootview = inflater.inflate(R.layout.content_home,container,false);
+//        rootview = inflater.inflate(R.layout.fragment_giohang,container,false);
 
         loadMenu();
 
@@ -53,11 +54,12 @@ public class HomeFragment extends Fragment {
                 categoryList.clear();
                 for(DataSnapshot snapshot : dataSnapshot.getChildren()){
                     Category category = snapshot.getValue(Category.class);
+                    category.setId(snapshot.getKey());
                     categoryList.add(category);
 
                 }
                 homeAdapter = new HomeAdapter(getContext(),categoryList);
-                RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(getContext(), 3);
+                RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(getContext(), 2);
                 recyclerView.setLayoutManager(mLayoutManager);
                 recyclerView.setItemAnimator(new DefaultItemAnimator());
                 recyclerView.setAdapter(homeAdapter);

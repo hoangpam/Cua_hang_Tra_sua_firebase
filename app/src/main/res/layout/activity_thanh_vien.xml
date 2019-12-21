@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ThanhVienActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ll_tenthumuc"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imvtrove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_trove"></ImageView>
+        <TextView
+            android:id="@+id/thumuc"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thành viên"
+            android:textColor="@color/text_black"
+            android:textSize="20dp"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40sp"
+        >
+        <ImageView
+            android:id="@+id/hinh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/membership"
+            android:background="@drawable/bo_tron"></ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thành viên trộm chó"
+            android:textColor="@color/text_black"
+            android:textSize="20sp"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="40sp"></TextView>
+    </LinearLayout>
+</LinearLayout>

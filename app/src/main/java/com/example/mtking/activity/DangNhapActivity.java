@@ -21,8 +21,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 public class DangNhapActivity extends AppCompatActivity implements View.OnClickListener {
-//    public View bt_login;
-//    public Object button;
+
     Button btResignter;
     Button btLogin;
     EditText etEmail;

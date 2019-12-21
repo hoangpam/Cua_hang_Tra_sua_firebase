@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.HistoryActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ll_tenthumuc"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imvtrove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_trove"></ImageView>
+        <TextView
+            android:id="@+id/thumuc"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lịch sử điểm thưởng"
+            android:textColor="@color/text_black"
+            android:textSize="20dp"></TextView>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/chuakichhoat"
+        android:layout_marginTop="40sp"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="60sp">
+        <Button
+            android:id="@+id/btnlichsu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số điểm đã nhận"
+            android:background="@drawable/bg_register"
+            android:layout_marginLeft="50sp"></Button>
+        <Button
+            android:id="@+id/btnlichsudiem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Số điểm đã nhận"
+            android:background="@drawable/bg_item"
+            android:layout_marginLeft="20sp"></Button>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150sp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

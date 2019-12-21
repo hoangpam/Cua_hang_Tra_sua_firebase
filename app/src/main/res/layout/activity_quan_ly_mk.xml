@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.QuanLyMKActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ll_trove"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imvtroved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_trove">
+
+        </ImageView>
+        <TextView
+            android:id="@+id/text_trove"
+            android:layout_marginLeft="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quản lý mật khẩu"
+            android:textSize="20sp"
+            android:textColor="@color/text_black"></TextView>
+    </LinearLayout>
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/it_quandiachi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_states"
+            android:clickable="true"
+            android:padding="10dp">
+            <TextView
+                android:id="@+id/txtdiachi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="5dp"
+                android:text="Thay đổi mật khẩu đăng nhập"
+                android:textColor="@color/text_black"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/chuyentiep"
+                android:layout_width="184dp"
+                android:layout_height="20dp"
+                android:layout_toRightOf="@id/txtdiachi"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="50dp"
+                android:src="@drawable/ic_next"></ImageView>
+        </RelativeLayout>
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

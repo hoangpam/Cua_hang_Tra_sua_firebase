@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MTKING</string>
+    <string name="app_name"></string>
     <string name="title_activity_cua_hang">Map</string>
     <string name="title_activity_home">HomeActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -15,4 +15,14 @@
     <string name="menu_tools">Tools</string>
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="map_api_key">AIzaSyBNBhQs5fCLV47mfkAw3Wo_H6ChxGBvT84</string>
+    <string name="curr_context">ú chu cha</string>
+
+    <string-array name="size">
+        <item>Trung bình</item>
+        <item>Nhỏ</item>
+        <item>Lớn</item>
+    </string-array>
 </resources>

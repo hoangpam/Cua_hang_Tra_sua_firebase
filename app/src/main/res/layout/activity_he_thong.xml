@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.HeThongActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ll_tenthumuc"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imvtrove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_trove"></ImageView>
+        <TextView
+            android:id="@+id/thumuc"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nhận xét và phản hồi"
+            android:textColor="@color/text_black"
+            android:textSize="20dp"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_hethong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/xoabonho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Xoá Bộ Nhớ Cache"
+                android:textColor="@color/text_black"
+                android:textSize="20sp"
+                android:layout_marginLeft="50dp"></TextView>
+            <ImageView
+                android:id="@+id/imvxoa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_delete"
+                android:layout_toRightOf="@id/xoabonho"
+                android:layout_marginLeft="70dp"
+                ></ImageView>
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

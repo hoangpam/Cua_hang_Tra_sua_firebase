@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.QuanLyDiaChiActivity">
+    <LinearLayout
+        android:id="@+id/ll_trove"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imvtroved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_trove">
+
+        </ImageView>
+        <TextView
+            android:id="@+id/text_trove"
+            android:layout_marginLeft="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Địa chỉ giao hàng"
+            android:textSize="20sp"
+            android:textColor="@color/text_black"></TextView>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <RelativeLayout
+        android:layout_marginTop="250dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btndcgiaohang"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="@color/chuakichhoat"
+            android:text="Thêm địa chỉ giao hàng"
+            android:textColor="@color/text_white"
+            android:gravity="center"
+            android:layout_marginLeft="60dp"></Button>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,4 +1,7 @@
 package com.example.mtking.activity;
 
-public class TintucActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class TintucActivity extends AppCompatActivity {
+
 }

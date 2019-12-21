@@ -7,12 +7,15 @@
          Google Maps Android API v2, but you must specify either coarse or fine
          location permissions for the 'MyLocation' functionality.
     -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label=""
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -27,7 +30,7 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key" />
+            android:value="@string/map_api_key" />
 
         <activity
             android:name=".activity.CuaHangActivity"
@@ -35,13 +38,31 @@
         <activity android:name=".activity.WelcomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".activity.DangKyActivity" />
         <activity android:name=".activity.MainActivity" />
         <activity android:name=".activity.DangNhapActivity" />
+        <activity android:name=".activity.GioHangActivity" />
+        <activity android:name=".activity.ChungToiActivity"></activity>
+        <activity android:name=".activity.HeThongActivity" />
+        <activity android:name=".activity.GmailActivity" />
+        <activity android:name=".activity.QuanLyMKActivity" />
+        <activity android:name=".activity.SDTActivity" />
+        <activity android:name=".activity.QuanLyDiaChiActivity" />
+        <activity android:name=".activity.DiaChiGiaoHangActivity" />
+        <activity android:name=".activity.ThanhVienActivity" />
+        <activity android:name=".activity.QuaTangActivity" />
+        <activity android:name=".activity.DoiDiemActivity" />
+        <activity android:name=".activity.CDTLuyActivity" />
+        <activity android:name=".activity.HistoryActivity" />
+        <activity android:name=".activity.SettingActivity" />
+        <activity android:name=".activity.NX_PhanHoiActivity" />
+        <activity android:name=".activity.product_detailsActivity" />
+        <activity android:name=".activity.DrinkActivity" />
     </application>
 
 </manifest>

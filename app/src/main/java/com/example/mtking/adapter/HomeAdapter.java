@@ -1,6 +1,8 @@
 package com.example.mtking.adapter;
 
 import android.content.Context;
+import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,12 +14,15 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.example.mtking.R;
+import com.example.mtking.activity.DrinkActivity;
+import com.example.mtking.activity.MainActivity;
 import com.example.mtking.object.Category;
 
 import java.util.List;
 
 public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.MyViewHolder> {
     private Context mContext;
+
     private List<Category> categoryList;
 
 
@@ -51,7 +56,16 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.MyViewHolder> 
         final Category category = categoryList.get(position);
         holder.name.setText(category.getmName());
         Glide.with(mContext).load(category.getmImage()).into(holder.anh);
-
+        String id = category.getId();
+        Log.e("id",id);
+        holder.relativeLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(mContext, DrinkActivity.class);
+                intent.putExtra("key",category.getId());
+                mContext.startActivity(intent);
+            }
+        });
     }
 
     @Override
